@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Veronika  Travkova](https://up.htmlacademy.ru/htmlcss/27/user/1008871).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Цапова](https://htmlacademy.ru/profile/julie_web_)
 
 ---
 
