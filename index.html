@@ -8,7 +8,14 @@
  	<header>
  	 <a href=""><img src="img/logo.png" width="109" height="18" alt="Логотип Техномарт"></a>
  	 <ul>
- 	 	 <li><input type="text" name="search" placeholder="Поиск"></li>
+ 	 	 <li>
+ 	 	 	<div>
+	 	 	 	<form>
+	 	 	 		<button class="visually-hidden" type="submit" aria-label="Поиск"></button>
+	 	 	 	   <input type="text" name="search" placeholder="Поиск">
+	 	 	 	</form>
+ 	 	 	</div>
+ 	 	 </li>
 	 	 <li><a href="#">Закладки:0</a></li>
 	 	 <li><a href="#">Корзина:0</a></li>
 	 	 <li><a href="#">Оформить заказ</a></li>
@@ -79,28 +86,34 @@
  				<li><a href="https://instagram.com/" aria-label="Инстаграм"></a></li>
  			</ul>
  			<p>Обратная связь:
- 				<a href="#">mail@htmlacademy.ru</a>
+ 				<a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
  			</p>
  			<p>Разработано - 
  				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
  			</p>
  	</footer>
- </body>
-  	<form class="feedback visually-hidden"  method="post"
- 	       action="https://echo.htmlacademy.ru">
-           		<button type="button" aria-label="Закрыть окно"></button>
-                <p>
-                	<label for="user-name">Ваше имя:</label>
-                	<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                	<label for="user-mail">Ваш e-mail:</label>
-                	<input type="text" name="mail" id="user-mail" placeholder="email@example.com">
-                </p>
-                <p>
-                	<label for="text-mail">Текст письма:</label>
-                	<textarea name="comment" id="text-mail" placeholder="В свободной форме"></textarea>
-                </p> 
-                <button type="submit">Отправить</button>               
- 	</form>
+    <div>
+	  	<form class="feedback visually-hidden"  method="post"
+	 	       action="https://echo.htmlacademy.ru">
+	           		<button type="button" aria-label="Закрыть окно"></button>
+	                <p>
+	                	<label for="user-name">Ваше имя:</label>
+	                	<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+	                </p>
+	                <p>
+	                	<label for="user-mail">Ваш e-mail:</label>
+	                	<input type="text" name="mail" id="user-mail" placeholder="email@example.com">
+	                </p>
+	                <p>
+	                	<label for="text-mail">Текст письма:</label>
+	                	<textarea name="comment" id="text-mail" placeholder="В свободной форме"></textarea>
+	                </p> 
+	                <button type="submit">Отправить</button>
+	     </form>           
+    </div> 
+    <div class="map-address visually-hidden">
+ 		<button type="button" aria-label="Закрыть окно"></button>
+ 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.8258493008451!2d30.32302204014756!3d59.93866658617839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580308660585!5m2!1sru!2sru" width="300px" height="158px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </body>                       	
 </html>
