@@ -1,130 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-   <meta charset="utf-8">
-   <title>HTML Academy: Техномарт</title>
+	<meta charset="utf-8">
+	<title>HTML Academy: Техномарт</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
- 	<header>
- 		<div class="bg_logo">
- 		 <a href="index.html"><img src="img/logo.png" class="logo" width="109" height="18" alt="Техномарт"></a>
- 		</div>
- 	 <ul class="nav_top">
- 	 	 <li>
- 	 	 	<div>
-	 	 	 	<form>
-	 	 	 		<button class="visually-hidden" type="submit" aria-label="Поиск"></button>
-	 	 	 	   <input type="text" name="search" placeholder="Поиск">
-	 	 	 	</form>
- 	 	 	</div>
- 	 	 </li>
-	 	 <li><a href="#">Закладки:0</a></li>
-	 	 <li><a href="#">Корзина:0</a></li>
-	 	 <li><a href="#">Оформить заказ</a></li>
-	 </ul>
- 	 <p class="info">Интеренет-магазин строительных материалов для ремонта</p>
-	 <div class="phone">
-	  <a href="#" class="phone-number">+7(812)555-05-55</a>
-	 </div>
-	 <p class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
- 	 	<ul class="authorization">
-		 	<li><a href="#">Войти</a></li>
-		 	<li><a href="#">Регистрация</a></li>
-	 	</ul>
- 	 	<nav class="nav">
- 	 		<ul>
- 	 			<li><a href="index.html">Главная</a></li>
- 	 			<li><a href="#">Компания</a></li>
- 	 			<li><a href="catalog.html">Каталог</a></li>
- 	 			<li><a href="#">Новости</a></li>
- 	 			<li><a href="#">Спецпредложение</a></li>
- 	 			<li><a href="#">Доставка</a></li>
- 	 			<li><a href="#">Контакты</a></li>
+	<header>
+		<div class="bg_logo">
+			<a href="index.html">
+				<img src="img/logo.png" class="logo" width="109" height="18" alt="Техномарт">
+			</a>
+		</div>
+		<ul class="nav_top">
+			<li>
+				<div>
+					<form>
+						<button class="visually_hidden" type="submit" aria-label="Поиск"></button>
+						<input type="text" name="search" placeholder="Поиск">
+					</form>
+				</div>
+			</li>
+			<li>
+				<a href="#">Закладки:0</a>
+			</li>
+			<li>
+				<a href="#">Корзина:0</a>
+			</li>
+			<li>
+				<a href="#" class="issue">Оформить заказ</a>
+			</li>
+		</ul>
+		<p class="info">Интеренет-магазин строительных материалов для ремонта</p>
+		<div class="header_address">
+			<a href="#">
+				<span>+7(812)555-05-55</span>
+			</a>
+			<p class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+		</div>
+		<ul class="authorization">
+			<li>
+				<a href="#">Войти</a>
+			</li>
+			<li>
+				<a href="#">Регистрация</a>
+			</li>
+		</ul>
+		<nav class="main_nav">
+			<ul>
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
+					<a href="#">Компания</a>
+				</li>
+ 	 			<li>
+ 	 				<a href="catalog.html">Каталог</a>
+ 	 			</li>
+ 	 			<li>
+ 	 				<a href="#">Новости</a>
+ 	 			</li>
+ 	 			<li>
+ 	 				<a href="#">Спецпредложение</a>
+ 	 			</li>
+ 	 			<li>
+ 	 				<a href="#">Доставка</a>
+ 	 			</li>
+ 	 			<li>
+ 	 				<a href="#">Контакты</a>
+ 	 			</li>
  	 		</ul>
  	 	</nav>
-  	</header>
- 	<main>
- 		<h1>"ТЕХНОМАРТ"</h1>
-	 		<section class="info_company_delivery">
-	 			<h2>"КОМПАНИЯ ТЕХНОМАРТ"</h2>
-	 			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-	 			<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-	 			<ul>
-	 				<li>Деловые линии</li>
-	 				<li>Авторейдинг</li>
-	 				<li>ЖелДорЭкспедиция</li>
-	 			</ul>
-	 			<a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
-	 		</section>
-
-	 		<section class="info_company_delivery">
-	 			<h2>КОНТАКТЫ</h2>
-	 			<p>Вы можите забрать товар сами, заехав в наш офис:</p>
-	 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.8258493008451!2d30.32302204014756!3d59.93866658617839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580308660585!5m2!1sru!2sru" width="300px" height="158px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	 			<a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-	 		</section>
- 	</main>
-
- 	<footer>
- 		<section class="basement_first_section">
- 			<a href="index.html"><img src="img/logo.png" width="109" height="18" alt="Техномарт"></a>
- 			<ul class="first_lower_menu">
- 				<li><a href="#">Компания</a></li>
- 				<li><a href="#">Новости</a></li>
- 				<li><a href="#">Каталог</a></li>
- 				<li><a href="#">Доставка</a></li>
- 				<li><a href="#">Контакты</a></li>
+ 	 </header>
+ 	 <main>
+ 	 	<h1>"ТЕХНОМАРТ"</h1>
+ 	 	<section class="contacts">
+ 	 		<h2>"Компания техномарт"</h2>
+ 	 		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+ 	 		<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+ 	 		<ul>
+ 	 			<li>Деловые линии</li>
+ 	 			<li>Авторейдинг</li>
+ 	 			<li>ЖелДорЭкспедиция</li>
+ 	 		</ul>
+ 	 		<a href="#">Подробнее о компании</a>
+ 	 	</section>
+ 	 	<section class="contacts">
+ 	 		<h2>Контакты</h2>
+ 	 		<p>Вы можите забрать товар сами, заехав в наш офис:</p>
+ 	 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.8258493008451!2d30.32302204014756!3d59.93866658617839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580308660585!5m2!1sru!2sru" width="300px" height="158px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+ 	 		<a href="#">Заблудились? Напишите нам!</a>
+ 	 	</section>
+ 	 </main>
+ 	 <footer>
+ 	 	<section class="footer_navigation">
+ 	 		<a href="index.html"><img src="img/logo.png" width="109" height="18" alt="Техномарт"></a>
+ 	 		<ul class="site_menu">
+ 	 			<li>
+ 	 				<a href="#">Компания</a>
+ 	 			</li>
+ 				<li>
+ 					<a href="#">Новости</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Каталог</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Доставка</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Контакты</a>
+ 				</li>
  			</ul>
- 			<p class="address_bottom">г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
- 			<p class="address_bottom">+7(812)555-05-55</p>
- 			<ul class="second_bottom_menu">
- 				<li><a href="#">Материалы</a></li>
- 				<li><a href="#">Техника</a></li>
- 				<li><a href="#">Инструмент</a></li>
- 				<li><a href="#">Спецпредложения</a></li>
+ 			<p class="footer_address">
+ 				г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8
+ 				<span>+7(812)555-05-55</span>
+ 		    </p>
+ 			<ul class="catalog_menu">
+ 				<li>
+ 					<a href="#">Материалы</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Техника</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Инструмент</a>
+ 				</li>
+ 				<li>
+ 					<a href="#">Спецпредложения</a>
+ 				</li>
  			</ul>
  		</section>
- 		<section class="second_basement_section">
+ 		<section class="footer_inform">
  			<p>© 2010-2017 компания "Техномарт"</p>
  			<p>Все права защищены</p>
- 			<ul>
- 				<li><a href="https://vk.com/" aria-label="ВКонтакте"></a></li>
- 				<li><a href="https://facebook.com/" aria-label="Фейсбук"></a></li>
- 				<li><a href="https://instagram.com/" aria-label="Инстаграм"></a></li>
+ 			<ul class="authorship_list">
+ 				<li>
+ 					<a href="https://vk.com/" aria-label="ВКонтакте"></a>
+ 				</li>
+ 				<li>
+ 					<a href="https://facebook.com/" aria-label="Фейсбук"></a>
+ 				</li>
+ 				<li>
+ 					<a href="https://instagram.com/" aria-label="Инстаграм"></a>
+ 				</li>
  			</ul>
- 			<p>Обратная связь:
+ 			<address>Обратная связь:
  				<a href="mailto:htmlacademy.ru">mail@htmlacademy.ru</a>
- 			</p>
- 			<p>Разработано - 
+ 			</address>
+ 			<address>Разработано - 
  				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
- 			</p>
+ 			</address>
  		</section>
  	</footer>
-    <div>
-	  	<form class="feedback visually-hidden"  method="post"
-	 	       action="https://echo.htmlacademy.ru">
-	           		<button type="button" aria-label="Закрыть окно"></button>
-	                <p>
-	                	<label for="user-name">Ваше имя:</label>
-	                	<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
-	                </p>
-	                <p>
-	                	<label for="user-mail">Ваш e-mail:</label>
-	                	<input type="text" name="mail" id="user-mail" placeholder="email@example.com">
-	                </p>
-	                <p>
-	                	<label for="text-mail">Текст письма:</label>
-	                	<textarea name="comment" id="text-mail" placeholder="В свободной форме"></textarea>
-	                </p> 
-	                <button type="submit">Отправить</button>
-	     </form>           
-    </div> 
-    <div class="map-address visually-hidden">
+ 	<section class="feedback visually_hidden">
+ 		<form  method="post" action="https://echo.htmlacademy.ru">
+ 			<button type="button" aria-label="Закрыть окно"></button>
+ 			 <p>
+ 			 	<label for="user-name">Ваше имя:</label>
+ 			 	<input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+ 			 </p>
+ 			 <p>
+ 			 	<label for="user-mail">Ваш e-mail:</label>
+ 			 	<input type="text" name="mail" id="user-mail" placeholder="email@example.com">
+ 			 </p>
+ 			 <p>
+ 			 	<label for="text-mail">Текст письма:</label>
+ 			 	<textarea name="comment" id="text-mail" placeholder="В свободной форме"></textarea>
+ 			 </p>
+ 			 <button type="submit">Отправить</button>
+ 		</form>
+ 	</section>
+ 	<div class="map-address visually_hidden">
  		<button type="button" aria-label="Закрыть окно"></button>
  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.8258493008451!2d30.32302204014756!3d59.93866658617839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580308660585!5m2!1sru!2sru" width="300px" height="158px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
-  </body>                       	
+ 	</div>
+ </body>
 </html>
