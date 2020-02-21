@@ -8,12 +8,13 @@
 	<link href="css/style.css" rel="stylesheet">
  </head>
  <body>
- 	<header>
- 		<div>
- 		 <a href="index.html">
- 		 	<img src="img/logo.png" class="logo_header" width="109" height="18" alt="Техномарт">
- 		 </a>
- 		</div> 
+	<header class="main_header">
+		<section class="header_nav">
+		<div class="logo_header_cont">
+			<a href="index.html">
+				<img src="img/logo.png" class="logo" width="109" height="18" alt="Техномарт">
+			</a>
+		</div> 
  		<ul class="nav_top">
  			<li>
  				<div>
@@ -33,6 +34,8 @@
  				<a href="#" class="issue">Оформить заказ</a>
  			</li>
  		</ul>
+		</section>
+		<section class="box_address">
  		<p class="info">Интеренет-магазин строительных материалов для ремонта</p>
 		<div class="header_address">
 			<a href="#">
@@ -51,6 +54,7 @@
  				<a href="#" class="authorization_item">Личный кабинет</a>
  			</li>
  		</ul>
+ 	</section>
  		<nav class="main_nav">
  			<ul>
  				<li>
@@ -94,6 +98,53 @@
  	<main>
  		<h1>"ТЕХНОМАРТ" каталог</h1>
  		<h2 class="h2_perforator">Перфораторы</h2>
+ 		<section class="gallery_filter">
+<section class="filter">
+	 		<form  method="post" action="https://echo.htmlacademy.ru">
+	 			<fieldset>
+	 				<legend>Производители:</legend>
+	 				<ul class="filter">
+	 					<li>
+	 						<input type="checkbox" name="bosch" id="filter-bosch" checked> 
+	 						<label for="filter-bosch">Bosch</label>
+		 				</li>
+		 				<li>
+		 					<input type="checkbox" name="interskoll" id="filter-interskoll" > 
+		 					<label for="filter-interskoll">Интерскол</label>	
+		 				</li>
+		 				<li>
+		 					<input type="checkbox" name="makita" id="filter-makita" checked> 
+		 					<label for="filter-makita">Makita</label>						
+		 				</li>
+		 				<li>
+		 					<input type="checkbox" name="dewalt" id="filter-dewalt"> 
+		 					<label for="filter-dewalt">Dewalt</label>		 				
+		 			    </li>
+		 				<li>
+		 					<input type="checkbox" name="hitachi" id="filter-hitachi"> 
+		 					<label for="filter-hitachi">Hitachi</label>		 			
+		 			    </li>
+		 			</ul>
+	 		   	 </fieldset>
+				 <fieldset>
+				 	<legend>Питание:</legend>
+				 	<ul class="filter">
+				 		<li>
+				 			<input type="radio" name="nutrition-group" value="filter-accum" checked>
+				 			<label for="filter-accum">Аккумуляторные</label>
+				 		</li>
+				 		<li>
+				 			<input type="radio" name="nutrition-group" value="filter-network">
+				 			<label for="filter-network">Сетевые</label>
+				 		</li>
+				 	</ul>
+				 </fieldset>
+				 <button type="submit">Показать</button>
+				</form>
+		</section>
+
+
+
  		<ul class="gallery"><!--Кнопки которые появляются вместо картинки при наведении-->
  			<li>
  				<img src="img/Perforator_1.jpg" alt="">
@@ -165,55 +216,18 @@
 	 			<span class="new_price">12500 Р.</span>
 	 		</li>
 	 	</ul>
-	 	<section class="filter">
-	 		<form  method="post" action="https://echo.htmlacademy.ru">
-	 			<fieldset>
-	 				<legend>Производители:</legend>
-	 				<ul class="filter">
-	 					<li>
-	 						<input type="checkbox" name="bosch" id="filter-bosch" checked> 
-	 						<label for="filter-bosch">Bosch</label>
-		 				</li>
-		 				<li>
-		 					<input type="checkbox" name="interskoll" id="filter-interskoll" > 
-		 					<label for="filter-interskoll">Интерскол</label>	
-		 				</li>
-		 				<li>
-		 					<input type="checkbox" name="makita" id="filter-makita" checked> 
-		 					<label for="filter-makita">Makita</label>						
-		 				</li>
-		 				<li>
-		 					<input type="checkbox" name="dewalt" id="filter-dewalt"> 
-		 					<label for="filter-dewalt">Dewalt</label>		 				
-		 			    </li>
-		 				<li>
-		 					<input type="checkbox" name="hitachi" id="filter-hitachi"> 
-		 					<label for="filter-hitachi">Hitachi</label>		 			
-		 			    </li>
-		 			</ul>
-	 		   	 </fieldset>
-				 <fieldset>
-				 	<legend>Питание:</legend>
-				 	<ul class="filter">
-				 		<li>
-				 			<input type="radio" name="nutrition-group" value="filter-accum" checked>
-				 			<label for="filter-accum">Аккумуляторные</label>
-				 		</li>
-				 		<li>
-				 			<input type="radio" name="nutrition-group" value="filter-network">
-				 			<label for="filter-network">Сетевые</label>
-				 		</li>
-				 	</ul>
-				 </fieldset>
-				 <button type="submit">Показать</button>
-				</form>
-		</section>
+	 	
+</section>
+
 		</main>
 		<footer>
 			<section class="footer_navigation">
-				<a href="index.html">
-					<img src="img/logo.png" class="logo_footer" width="109" height="18" alt="Техномарт">
-				</a>
+<section class="logo_site_menu">
+ 	 		<div class="logo_footer_cont">
+ 	 			<a href="index.html">
+ 	 				<img src="img/logo.png" class="logo" width="109" height="18" alt="Техномарт">
+ 	 			</a>
+ 	 		</div>
 				<ul class="site_menu">
 					<li>
 						<a href="#">Компания</a>
@@ -231,6 +245,8 @@
 						<a href="#">Контакты</a>
 					</li>
 				</ul>
+ 			</section>
+ 			<section class="adress_catalog_menu">
  			<p class="footer_address">
  				г. Санкт-Петербург, ул.Б.Конюшенная, д. 19/8
  				<span>+7(812)555-05-55</span>
@@ -251,9 +267,10 @@
  			</ul>
  		</section>
  		<section class="footer_inform">
+ 			<section class="footer_box">
  			<p>© 2010-2017 компания "Техномарт"</p>
  			<p>Все права защищены</p>
- 			<ul>
+ 			<ul class="authorship_list">
  				<li>
  					<a href="https://vk.com/" aria-label="ВКонтакте"></a>
  				</li>

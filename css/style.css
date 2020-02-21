@@ -14,6 +14,7 @@ body{
 	font-size: 13px;
 	line-height: 24px;
 	background-color: #ffffff;
+
 	}
 a{
 	text-decoration: none;
@@ -21,6 +22,9 @@ a{
 img{
 	max-width: 100%;
 	height: auto;
+}
+.header_nav{
+	display: flex;	
 }
 .email{
 	color:#ffffff;
@@ -41,7 +45,10 @@ img{
 	list-style: none;
 	font-size: 17px;
 	line-height: 18px;
-	height: 60px;
+	width: 720px;
+	display: flex;
+	justify-content: space-between;
+
 }
 .nav_top a:not(.issue){
 	background-color:#293449;
@@ -75,6 +82,9 @@ img{
 	list-style: none;
 	font-size: 14px;
 	line-height: 17px;
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
 }
 .main_nav a{
 	background-color: #32425c;
@@ -88,6 +98,9 @@ img{
 .main_nav a:active{
 	background-color: #1d2739;
 	color:rgba(255,255,255,0.5);
+}
+.box_address{
+	display: flex;
 }
 .info{
 	color: #ee3643;
@@ -110,6 +123,7 @@ img{
 	font-size: 21px;
 	line-height: 21px;
 	list-style: none;
+	display: flex;
 }
 .authorization a{
 	color: #000000;
@@ -131,11 +145,18 @@ img{
 .breadcrumbs{
 	list-style: none;
 	line-height: 18px;
+	display: flex;
 }
 .breadcrumbs a{
 	text-transform:uppercase;
 	color:#000000;
 	font-size: 13px;
+	margin-left: 18px;
+}
+.gallery_filter{
+	display: flex;
+	justify-content: space-around;
+	width: 940px;
 }
 .h2_perforator{
 	text-transform:uppercase;
@@ -147,6 +168,10 @@ img{
 }
 .gallery{
 	list-style: none;
+	width: 700px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }	
 .buy{
 	text-transform:uppercase;
@@ -228,10 +253,18 @@ img{
 	font-size: 18px;
 	line-height:24px;
 }
+.logo_site_menu{
+	display: flex;
+	justify-content: space-around;
+		width: 950px;
+}
 .site_menu{
 	list-style: none;
 	font-size: 18px;
 	line-height: 24px;
+	display: flex;
+	justify-content: space-between;
+	width: 550px; 
 }
 .site_menu a{
 	color: #ffffff; 
@@ -248,7 +281,10 @@ img{
 .catalog_menu{
 	list-style: none;
 	font-size: 18px;
-	line-height: 24px;  
+	line-height: 24px;
+	width: 524px;
+	display: flex;
+	justify-content: space-between;  
 }
 .catalog_menu a{
 	color: #ffd180;  
@@ -266,8 +302,20 @@ img{
 	color: #f1f5f7;
 	line-height: 24px;
 }
+.adress_catalog_menu{
+	display: flex;
+	justify-content: space-around;
+	width: 950px;
+}
+
 .footer_inform{
 	background-color: #293449;
+
+}
+.footer_box{
+	display: flex;
+	justify-content: space-around;
+	width: 950px;
 }
 .footer_inform p{
 	font-size: 16px;
@@ -287,6 +335,13 @@ img{
 	text-decoration: none;
 	color:#e13643;
 }
+.box_contactas{
+	display: flex;
+	justify-content: space-around;
+	width: 950px;
+}
+
+
 .contacts h2{
 	font-size: 30px;
 	line-height: 30px;
@@ -316,29 +371,46 @@ img{
 .contacts a:active{
 	background-color: #ba2732;
 }
-.logo_header{
-background-color: #ee3643;
-border-bottom: 5px solid #b72f38;
+.authorship_list{
+	display: flex;
+	justify-content: space-between;
 }
-.logo_header:hover,
-.logo_header:focus{
+
+/*РАБОТА С ЛОГОТИПОМ*/
+.logo{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.logo_header_cont{
+width: 220px;
+height: 47px;
+padding-top: 13px;
+background-color: #ee3643;
+border-bottom: 5px solid #b72f38;	
+}
+.logo_header_cont:hover,
+.logo_header_cont:focus{
 background-color: #ca2c37;
 border-bottom: 5px solid #9a212a;
 }
-.logo_header:active{
+.logo_header_cont:active{
 background-color: #ba2732;
 border-bottom: 5px solid #8e1e26;
 }
-.logo_footer{
+.logo_footer_cont{
 background-color: #ee3643;
 border-bottom: 5px solid #b72f38;
+height: 68px;
+width: 220px;
+padding-top: 21px; 
 }
-.logo_footer:hover,
-.logo_footer:focus{
+.logo_footer_cont:hover,
+.logo_footer_cont:focus{
 background-color: #ca2c37;
 border-bottom: 5px solid #9a212a;
 }
-.logo_footer:active{
+.logo_footer_cont:active{
 background-color: #ba2732;
 border-bottom: 5px solid #8e1e26;
 }
