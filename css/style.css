@@ -8,6 +8,7 @@ box-sizing: border-box;
 box-sizing: inherit;
 }
 body{
+	width: 100%;
 	margin: 0 auto;	
 	padding: 0;
 	font-family: 'Cuprum', Arial ,sans-serif;
@@ -16,6 +17,9 @@ body{
 	background-color: #ffffff;
 
 	}
+body ul{
+	padding-left: 0px;
+}
 a{
 	text-decoration: none;
 }
@@ -25,6 +29,7 @@ img{
 }
 .header_nav{
 	display: flex;	
+	background-color: #293449; 
 }
 .email{
 	color:#ffffff;
@@ -45,7 +50,8 @@ img{
 	list-style: none;
 	font-size: 17px;
 	line-height: 18px;
-	width: 720px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 	display: flex;
 	justify-content: space-between;
 
@@ -77,18 +83,30 @@ img{
 	color:rgba(255,255,255,0.5);
 }
 
-/*Нижнее меню поиска*/
+/*Нижнее меню поиска*/	
+
+.main_nav{
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .main_nav ul{
 	list-style: none;
 	font-size: 14px;
 	line-height: 17px;
-	width: 940px;
 	display: flex;
 	justify-content: space-between;
+}
+.main_nav_list{
+	width: 100%;
 }
 .main_nav a{
 	background-color: #32425c;
 	color: #ffffff;
+	padding: 18px 40px;
+	display: inline-block;
+	height: 60px;
 }
 .main_nav a:hover,
 .main_nav a:focus{
@@ -103,17 +121,13 @@ img{
 	display: flex;
 }
 .info{
+	margin-top:0;
 	color: #ee3643;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 }
-.header_address{
-	width:270px;
-	height:45px;
-	text-align: center;
-	border: #ffffff 4px solid;
-}
+
 .address{
 	font-size: 14px;
 	line-height: 24px;
@@ -146,6 +160,10 @@ img{
 	list-style: none;
 	line-height: 18px;
 	display: flex;
+		width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
 }
 .breadcrumbs a{
 	text-transform:uppercase;
@@ -156,7 +174,10 @@ img{
 .gallery_filter{
 	display: flex;
 	justify-content: space-around;
-	width: 940px;
+	width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
 }
 .h2_perforator{
 	text-transform:uppercase;
@@ -164,15 +185,22 @@ img{
 	line-height: 30px;
 	color:#32425c;
 	background-color: #f2f6f8;
+	width: 960px;
 	height: 89px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
 }
-.gallery{
+.catalog{
 	list-style: none;
 	width: 700px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }	
+.catalog li{
+	width: 220px;	
+}
 .buy{
 	text-transform:uppercase;
 	font-size: 14px;
@@ -249,9 +277,12 @@ img{
 	border: #e5e5e5 1px solid;
 }	
 .footer_navigation{
-	background-color:#32425c;
-	font-size: 18px;
-	line-height:24px;
+	display: flex;
+	justify-content: space-between;
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px; 
 }
 .logo_site_menu{
 	display: flex;
@@ -304,19 +335,22 @@ img{
 }
 .adress_catalog_menu{
 	display: flex;
-	justify-content: space-around;
-	width: 950px;
+	justify-content: space-between;
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px; 
 }
 
 .footer_inform{
-	background-color: #293449;
-
-}
-.footer_box{
 	display: flex;
-	justify-content: space-around;
-	width: 950px;
+	justify-content: space-between;
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px; 
 }
+
 .footer_inform p{
 	font-size: 16px;
 	line-height: 18px;
@@ -335,40 +369,43 @@ img{
 	text-decoration: none;
 	color:#e13643;
 }
-.box_contactas{
+.wrapper_about_company{
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px; 
 	display: flex;
-	justify-content: space-around;
-	width: 950px;
+
 }
 
 
-.contacts h2{
+.about_company h2{
 	font-size: 30px;
 	line-height: 30px;
 	text-transform:uppercase;
 }
-.contacts p{
+.about_company p{
 	font-size: 13px;
 	line-height: 24px;
 }
-.contacts li{
+.about_company li{
 	font-size:18px;
 	line-height: 20px;
 	list-style-type: none; 
 }
-.contacts a{
+.about_company a{
 	color: #ffffff;
 	text-transform:uppercase;
 	font-size: 14px;
 	line-height: 18px;
 	background-color: #ee3643;
 }
-.contacts a:hover,
-.contacts a:focus{
+.about_company a:hover,
+.about_company a:focus{
 	background-color: #ca2c37;
 	outline-color: #000080;
 }
-.contacts a:active{
+.about_company a:active{
 	background-color: #ba2732;
 }
 .authorship_list{
@@ -413,4 +450,31 @@ border-bottom: 5px solid #9a212a;
 .logo_footer_cont:active{
 background-color: #ba2732;
 border-bottom: 5px solid #8e1e26;
+}
+.wrapper_logo{
+	width: 960px;
+	margin:0 auto;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+.wrapper_part_header{
+	background-color: #f3f7f9;
+}
+.header_middle{	
+	width: 960px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+.wrapper_fnavigation{
+	background-color: #32425c;
+}
+.wrapper_inform{
+	background-color: #293449;
+}
+.header_address span{
+
+	color:#ee3643;
+	font-size: 21px;
+	line-height: 21px;
 }
